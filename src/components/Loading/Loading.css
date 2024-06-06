@@ -1,0 +1,16 @@
+.loading {
+    font-size: 2rem ;
+    margin: 200px auto 0;
+    animation: loading 1s linear infinite;
+    width: 100%;
+
+}
+
+@keyframes loading {
+   from{
+    transform: rotate(0deg);
+   } 
+   to{
+    transform: rotate(360deg);
+   }
+}

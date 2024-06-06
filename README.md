@@ -1,4 +1,5 @@
 # mercado-livre-ofertas
 Desenvolvimento do projeto final do Campinho 
 
-teste 1
+Planejamento do projeto: 
+https://github.com/domingosvinny/mercado-livre-ofertas/pull/1 
