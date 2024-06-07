@@ -11,7 +11,7 @@ function Products() {
     
 
     useEffect(() => {
-        fetchProducts('iphone').then((response) => {
+        fetchProducts('Bleach').then((response) => {
           setProducts(response);
           setLoading(false);
           
