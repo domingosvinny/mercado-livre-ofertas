@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import './Ofertas.css';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 import formatCurrency from "../../utils/formatCurrency";
-
 import { BsFillCartPlusFill } from "react-icons/bs";
-
-
+import AppContext from "../../context/AppContext";
 
 function Ofertas() {
+  const { cartItens, setCartItens } = useContext(AppContext);
   const [ofertas, setOfertas] = useState([]);
   const [groupIndex, setGroupIndex] = useState(0);
   const groupSize = 5;
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -34,6 +32,10 @@ function Ofertas() {
 
     fetchOfertas();
   }, []);
+
+  const handleAddCart = (oferta) => {
+    setCartItens([...cartItens, oferta]);
+  };
 
   if (loading) {
     return (
@@ -66,12 +68,11 @@ function Ofertas() {
         <div className="ofertas-list">
           {ofertas.slice(groupIndex * groupSize, (groupIndex + 1) * groupSize).map((oferta, index) => (
             <div key={index} className="oferta-group">
-              <img src={oferta.thumbnail.replace(/\w\.jpg/gi, "W.jpg")} alt={oferta.title} 
-              className="oferta-image"/>
+              <img src={oferta.thumbnail.replace(/\w\.jpg/gi, "W.jpg")} alt={oferta.title} className="oferta-image" />
               <h2 className="oferta-price">{formatCurrency(oferta.price, 'BRL')}</h2>
               <h3 className="oferta-title">{oferta.title}</h3>
-              <button type="button" className="button--add-cart1">
-      <        BsFillCartPlusFill />
+              <button type="button" className="button--add-cart1" onClick={() => handleAddCart(oferta)}>
+                <BsFillCartPlusFill />
               </button>
             </div>
           ))}
@@ -86,7 +87,3 @@ function Ofertas() {
 }
 
 export default Ofertas;
-
-
-
-
