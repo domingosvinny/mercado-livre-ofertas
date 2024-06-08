@@ -3,6 +3,9 @@ import './Ofertas.css';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 import formatCurrency from "../../utils/formatCurrency";
 
+import { BsFillCartPlusFill } from "react-icons/bs";
+
+
 
 function Ofertas() {
   const [ofertas, setOfertas] = useState([]);
@@ -67,6 +70,9 @@ function Ofertas() {
               className="oferta-image"/>
               <h2 className="oferta-price">{formatCurrency(oferta.price, 'BRL')}</h2>
               <h3 className="oferta-title">{oferta.title}</h3>
+              <button type="button" className="button--add-cart1">
+      <        BsFillCartPlusFill />
+              </button>
             </div>
           ))}
         </div>

@@ -17,7 +17,7 @@
 }
 
 .cart-item-title{
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     font-weight: 500;
     color: black;
     margin-bottom:  8px;
@@ -25,7 +25,7 @@
 }
 
 .cart-item-price{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
 
 }
