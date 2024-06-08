@@ -1,9 +1,17 @@
-.header{
+.header {
     background-color: #354252;
     position: fixed;
     width: 100%;
     z-index: 1;
-    border: 1px solid #000000
+    border: 1px solid #000000;
+
+    background-image: url('../../Imagens/img005.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem no cabeçalho */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: #354252;
+
+  
 }
 
 .header > div {
@@ -14,36 +22,43 @@
 }
 
 .search-barra {
-    display:  flex;
+    display: flex;
+    flex-grow: 1; /* Permite que a barra de busca cresça para ocupar o espaço restante */
     background-color: #DFDAD4;
-    width: 100%;
-    max-width: 500px;
-    justify-content: space-between;
+    max-width: 70%; /* Defina a largura máxima em porcentagem */
     box-shadow: 0 1px 2px 0 rgba(83, 83, 83, 0.1);
     gap: 13px;
     padding-right: 13px;
+    
 }
 
-.search_input{
+.search_input {
     padding: 13px;
     flex-grow: 1;
-    
     border: none;
     outline: none;
     font-size: 0.8rem;
     font-weight: 500px;
     border-right: 1px solid #354252;
-    background-color: #DFDAD4;;;
-
+    background-color: #DFDAD4;
 }
 
-.search_button{
-    background-color:  #DFDAD4;
+.search_button {
+    background-color: #DFDAD4;
     border: none;
     font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #354252;
+    min-width: 100px; /* Defina uma largura mínima para o botão */
+}
 
+.logo {
+    max-width: 100px; /* Torna a logo responsiva */
+    height: auto; /* Mantém a proporção da altura */
+    border-radius: 5px; /* Garante que a logo permaneça redonda */
+    
+    
+     
 }
