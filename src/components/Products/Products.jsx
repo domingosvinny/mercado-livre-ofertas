@@ -11,7 +11,7 @@ function Products() {
     
 
     useEffect(() => {
-        fetchProducts('Bleach').then((response) => {
+        fetchProducts('').then((response) => {
           setProducts(response);
           setLoading(false);
           

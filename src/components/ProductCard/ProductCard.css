@@ -1,3 +1,4 @@
+/* Estilos existentes */
 .product-card {
     width: 100%;
     max-width: 300px;
@@ -45,14 +46,14 @@
     right: 0;
     width: 45px;
     height: 45px;
-    margin: 12px 15px; /* Correção da vírgula para espaço */
+    margin: 12px 15px;
     color: #0c5dd6;
     display: none;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.8); /* Correção da função rgba */
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -62,5 +63,158 @@
 }
 
 .product-card:hover .button__add-cart {
-    display:flex;
+    display: flex;
+}
+
+/* Novos estilos para o modal */
+.modal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align:center;
+  
+   font-size: 18px;
+}
+
+.modal1-content {
+    background-color: #fcf3f8ec;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #986068;
+    max-height: 800px; /* Tamanho máximo do modal */
+    max-width: 1500px;
+    overflow-y: auto; 
+    
+}
+
+.close1 {
+    color: #834c54;
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal1-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #834c54;
+}
+
+.modal1-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.modal1-info {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.modal1-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.attributes-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.attribute-item {
+    margin-bottom: 5px;
+}
+
+.attribute-name {
+    font-weight: bold;
+    color:#834c54; 
+}
+
+.attribute-value {
+    margin-left: 5px;
+}
+
+.modal1-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+
+.modal1-btn-closer {
+  padding: 0px 0px;
+  width: 120px; 
+  height: 30px; 
+  font-size: 16px;
+  border: 2px solid #834c54; 
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #999595;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.modal1-btn-closer:hover {
+    background-color: #8d8b8b;
+}
+
+.modal1-btn-addCart {
+  padding: 0px 0px;
+  width: 180px; 
+  height: 30px; 
+  font-size: 16px;
+  border: 2px solid #834c54; 
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #be7680;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.modal1-btn-addCart:hover {
+    background-color: #a86c74;
+}
+
+.modal1-btn-buy {
+    padding: 0px 0px;
+    width: 110px; 
+    height: 30px; 
+    font-size: 16px;
+    border: 2px solid #834c54; 
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #62cc8e;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.modal1-btn-buy:hover {
+    background-color: #59b881;
 }
