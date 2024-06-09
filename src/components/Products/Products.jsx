@@ -5,6 +5,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import Loading from "../Loading/Loading";
 import AppContext from "../../context/AppContext";
 
+
 function Products() {
     
     const { products, setProducts, loading, setLoading} = useContext(AppContext);
@@ -12,6 +13,7 @@ function Products() {
 
     useEffect(() => {
         fetchProducts('').then((response) => {
+     
           setProducts(response);
           setLoading(false);
           

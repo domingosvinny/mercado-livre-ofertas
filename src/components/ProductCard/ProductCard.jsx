@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import { FaCartPlus } from "react-icons/fa";
 import './ProductCard.css';
 import formatCurrency from "../../utils/formatCurrency";
+import fetchProductInfo from "../../api/fetchProductInfo";
 import AppContext from "../../context/AppContext";
+
 
 function ProductCard({ data }) {
     const { title, thumbnail, price, id, attributes } = data;
@@ -19,23 +21,22 @@ function ProductCard({ data }) {
 
     const handleShowModal = async () => {
         try {
-            const descriptionResponse = await fetch(`https://api.mercadolibre.com/items/${id}/description`);
-            if (!descriptionResponse.ok) {
-                throw new Error(`HTTP error! status: ${descriptionResponse.status}`);
-            }
-            const descriptionData = await descriptionResponse.json();
+            const descriptionData = await fetchProductInfo(`${id}`, true);
+           
+           console.log(descriptionData);
             setProductDescription(descriptionData.plain_text);
 
-            const productResponse = await fetch(`https://api.mercadolibre.com/items/${id}`);
-            if (!productResponse.ok) {
-                throw new Error(`HTTP error! status: ${productResponse.status}`);
-            }
-            const productData = await productResponse.json();
+            const productData = await fetchProductInfo(`${id}`, false);
+           
+            
+            console.log(productData);
             setProductAttributes(productData.attributes);
 
             setModalVisible(true);
         } catch (err) {
             console.error(err.message);
+            console.log(err.stack);
+            //console.trace();
         }
     };
 

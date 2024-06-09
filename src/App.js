@@ -4,6 +4,8 @@ import Products from "./components/Products/Products";
 import Provider from "./context/Provider";
 import Cart from "./components/Cart/Cart";
 import Ofertas from "./components/Ofertas/Ofertas";
+import Baseboard from "./components/Baseboard/Baseboard";
+
 
 
 
@@ -15,6 +17,8 @@ function App() {
       <Ofertas/>
       <Products/>
       <Cart/>
+
+      
     </Provider>
     
   );

@@ -22,6 +22,7 @@ function SearchBarra(){
     setSearchValue('');
   };
 
+   
     return(
         <form className="search-barra" onSubmit={handleSearch}>
           {name}
