@@ -18,7 +18,7 @@ function App() {
       <Products/>
       <Cart/>
 
-      
+      <Baseboard/>
     </Provider>
     
   );

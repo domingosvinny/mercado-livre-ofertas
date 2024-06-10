@@ -1,6 +1,6 @@
 /* Ofertas.css */
 .ofertas-container {
-  padding-top: 100px; 
+  padding-top: 70px; 
   display: flex;
   flex-direction: column; 
   align-items: center; 
@@ -9,7 +9,7 @@
 .title-season {
   display: flex;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   color: #ffffff;
   font-size: 28px;
 }
