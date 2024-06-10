@@ -3,4 +3,4 @@ Desenvolvimento do projeto final do Campinho Digital com base nos objetivos esta
 Repositório: https://github.com/campinho-digital/desafio-final 
 
 Planejamento do projeto: 
-https://github.com/domingosvinny/mercado-livre-ofertas/pull/1 
+https://github.com/users/domingosvinny/projects/1
