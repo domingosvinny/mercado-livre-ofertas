@@ -1,4 +1,4 @@
-# mercado-livre-ofertas
+# The Developer Shop
 Desenvolvimento do projeto final do Campinho Digital com base nos objetivos estabelecidos.
 Repositório: https://github.com/campinho-digital/desafio-final 
 
