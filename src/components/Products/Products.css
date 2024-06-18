@@ -1,0 +1,13 @@
+.products{
+    padding:  120px 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+.search-info p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
